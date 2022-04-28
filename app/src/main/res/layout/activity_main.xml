@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-<!-- J'utilise le modele recycled_view_item -->
+    <!-- J'utilise le modele recycled_view_item -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/taskRv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:listitem="@layout/recycler_view_items"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:listitem="@layout/recycled_view_item"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
