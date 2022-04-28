@@ -1,5 +1,6 @@
 package net.cyberplanete.viewbindingdemo
 
+import android.icu.lang.UCharacter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContentProviderCompat.requireContext
@@ -20,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         val adaptateur = AdaptateurPrincipal(TaskList.taskList)
         // Utilisation d'un adaptateur
         myBinding?.taskRv?.adapter = adaptateur
-        var linearLayoutManager = LinearLayoutManager(this)
-        myBinding?.taskRv?.layoutManager = linearLayoutManager
+//        var linearLayoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+//        myBinding?.taskRv?.layoutManager = linearLayoutManager
 
         myBinding?.taskRv?.layoutManager
     }
